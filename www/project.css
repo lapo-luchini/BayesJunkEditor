@@ -1,0 +1,164 @@
+/* @import url("hide_from_ns4.css"); */
+
+H4.project-name {
+	background: inherit;
+	color:#990000;
+	font-family: helvetica,arial,sans-serif, serif;
+	font-size: 18pt;
+	padding: 0px;
+	text-transform: capitalize;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.page-header {
+	background: inherit;
+	color:#000000;
+	font-family: helvetica,arial,sans-serif, serif;
+	padding: 0px;
+}
+
+.project-navigations {
+	margin-bottom: 2em;
+	border: none; /* work around weird ns4 bug */
+	font-size: smaller;
+}
+
+TABLE.navbar {
+	padding: 0px;
+}
+
+TD.navigation-button {
+	background-color: #990000;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	border-color: #BBBBBB;
+	border-style: outset;
+	font-weight: 600;
+	font-size: 9pt;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* Change the button background colour when the mouse hovers over it. */
+TD.navigation-button:hover {
+	background-color: #FF9900;
+}
+
+/* This removes those unsightly underlines and rust stains from the links in the navbar "buttons". */
+A.navbar {
+	text-decoration: none;
+	color: #FFFFFF;
+	white-space: nowrap;
+}
+
+TH.navbar {
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+	background: #FFFFFF no-repeat url("http://www.mozdev.org/sharedimages/nav-icon.png");
+	background-position: 0% 60%;
+	padding-left: 18px;
+	padding-right: 12px;
+	font-family: helvetica,arial,sans-serif, serif;
+	color:#990000;
+	vertical-align: middle;
+}
+
+DIV.infoTabs {
+	float: right;
+	border-color: #DDDDDD;
+	border-style: dotted;
+}
+
+DIV.infoTab {
+	margin: 10px;
+	width: 154px;
+}
+
+DIV.infoTab .infoHeader {
+	background: #FF9900 no-repeat url("http://www.mozdev.org/sharedimages/infotab_top.png");
+	color: white;
+	text-align: center;
+	font-family: Helvetica, Arial,sans-serif, serif;
+	font-weight: bold;
+}
+
+H5.infoTabEnd {
+	background: #FFFFFF no-repeat url("http://www.mozdev.org/sharedimages/infotab_bottom.gif");
+	color: white;
+	text-align: center;
+	font-family: Helvetica, Arial,sans-serif, serif;
+	font-weight: bold;
+	margin: 10px;
+	width: 154px;
+}
+
+UL.infoTab {
+	font-size: smaller;
+	list-style-type: square;
+	list-style-image: url("http://www.mozdev.org/sharedimages/bullet.gif");
+	list-style-position: inside;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+LI.infoTabList {
+	padding-bottom: 10px;
+}
+
+LI.indexList {
+	padding-bottom: 15px;
+	list-style-type: square;
+	list-style-image: url("http://www.mozdev.org/sharedimages/arrow_next.gif");
+	margin-left: 5px;
+	margin-right: 20px;
+}
+
+DIV.infoTab .infoItems {
+	font-size: smaller;
+}
+
+DIV.infoTab .infoItems div {
+	background: white no-repeat url("http://www.mozdev.org/sharedimages/bullet.gif");
+	color: inherit;
+	padding-left: 16px;
+	padding-bottom: 5px;
+}
+
+TABLE.downloadTable {
+	border-color: #000000;
+	border-style: double;
+	margin: 10px;
+}
+
+TABLE.downloadTable TD {
+	border-color: #000000;
+	border-style: solid;
+	border-width: thin;
+	padding: 5px;
+}
+
+TD.downloadDescriptor {
+	padding-top: 15px ! important;
+	padding-bottom: 15px ! important;
+	text-align: center;
+	font-weight: bold;
+	background-color: #990000;
+	color: #FFFFFF;
+}
+
+TD.downloadHeader {
+	background-color: #FF9900;
+}
+
+TD.center {
+	text-align: center;
+}
+
+P {
+	margin-left: 5px;
+	margin-right: 20px;
+}

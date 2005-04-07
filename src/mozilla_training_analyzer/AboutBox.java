@@ -46,29 +46,31 @@ import javax.swing.JOptionPane;
  */
 public class AboutBox extends JDialog {
 
-	// Declare this here so that we create it once, not
-	// every time we hit the About button.
-	private static final ImageIcon aboutImage = new ImageIcon("images/logo.gif");
+    private static final long serialVersionUID = 6254523;
 
-	// No instantiation of this class.
-	private AboutBox() {
-	}
+    // Declare this here so that we create it once, not
+    // every time we hit the About button.
+    private static final ImageIcon aboutImage = new ImageIcon(Class.class.getResource("/images/logo.gif"));
 
-	/** This method displays the actual About box.
-	 *
-	 * @param parentComponent	The parent frame of this AboutBox.
-	 * 							It is safe to make this null if
-	 * 							there is no parent.
-	 */
-	public static void display(Component parentComponent) {
+    // No instantiation of this class.
+    private AboutBox() {
+    }
 
-		// Display the About box.
-		JOptionPane.showMessageDialog(
-			parentComponent,
-			Analyzer.VER_STRING + "\nhttp://bayesjunktool.mozdev.org",
-			"About",
-			JOptionPane.PLAIN_MESSAGE,
-			aboutImage
-		);
-	}
+    /** This method displays the actual About box.
+     *
+     * @param parentComponent	The parent frame of this AboutBox.
+     * 							It is safe to make this null if
+     * 							there is no parent.
+     */
+    public static void display(Component parentComponent) {
+
+        // Display the About box.
+        JOptionPane.showMessageDialog(
+                parentComponent,
+                Analyzer.VER_STRING + "\nhttp://bayesjunktool.mozdev.org",
+                "About",
+                JOptionPane.PLAIN_MESSAGE,
+                aboutImage
+        );
+    }
 }
