@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'com.palantir.git-version' version '3.0.0'
+}
+
+version = gitVersion()
+
+tasks.withType(JavaCompile) {
+    if (JavaVersion.current() < JavaVersion.VERSION_11)
+        new GradleException('Java 11 (or later) is needed to build this project, you are using: ' + JavaVersion.current())
+    options.release = 11
+    options.encoding = 'UTF-8'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+tasks.jar {
+    manifest.attributes["Main-Class"] = "mozilla_training_analyzer.Analyzer"
+}

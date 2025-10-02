@@ -2,3 +2,7 @@
 *.dat     binary
 *.gif     binary
 *.jpg     binary
+# Gradle files
+gradlew     binary
+gradlew.bat binary
+*.jar       binary
